@@ -1,0 +1,33 @@
+<header>
+  <nav class="cf" ng-include="'views/nav.html'"></nav>
+</header>
+
+<section class="loginIn">
+  <form name="myform"
+    ng-submit="login()"
+    novalidate ng-init="getAll()">
+
+    <div class="textintro">
+      <p class="message" 
+        ng-show="message"> {{ message }}</p>
+    </div>
+
+    <fieldset>
+      <input type="email" name="email" placeholder="Email"
+       ng-model="user.email" ng-required="true">
+      <p class="error validationerror"
+      ng-show="myform.email.$invalid && myform.email.$touched">
+      Must be a valid email</p>
+      <input type="password" name="password" placeholder="Password"
+      ng-model="user.password" ng-required="true">
+      <p class="error validationerror"
+      ng-show="myform.password.$invalid && myform.email.$touched">
+      Password is required</p>
+    </fieldset>
+    <button type="submit" class="loginButton"
+      ng-disabled="myform.$invalid">Login
+    </button>
+    <p class="class">or <a ng-href="#/register">Register</a></p>
+  </form>
+  <!--<a ng-href="#/users">get all users</a> -->
+</section>

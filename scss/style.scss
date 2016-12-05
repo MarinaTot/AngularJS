@@ -1,0 +1,134 @@
+	/* reset*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+		list-style: none;
+}
+body{
+ background:url(../images/cherry-blossom-desktop-backgrounds-wallpaper-download.jpg);
+ background-repeat: no-repeat;
+ }
+/* nav.html */
+.navDiv{
+	margin-top: 50px;
+}
+.branding{
+	margin-left: 5%;
+	display: inline;
+	a{
+	font-size: 30px;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #4C4E91;
+		&:hover{
+		text-decoration: none;
+		color: #691159;
+		clear: both;
+		}
+	}
+}
+.navUl{
+	display: inline-block;
+	float: right;
+		li{
+		 	display: inline;
+			list-style-type: none;
+			font-size: 30px;
+			margin-right: 40px;
+			a{
+				color: #B5146A;
+				text-transform:uppercase; 
+			&:hover{
+				text-decoration: none;
+				color: #E3BCCB;
+			}
+		}
+	}
+}
+.cf{
+	color: #FFFFFF;
+}
+/* form */
+form{
+	margin-left: 22%;
+	margin-top: 10%;
+}
+fieldset{
+	display: inline;
+		input{
+		display: inline;
+		padding: 11px 50px;
+	    border-radius: 10px;
+	    border:1px solid #EDD8E7;
+	    background:#FFFFFF;
+	    color: #F0B9A3;
+	    margin: 10px;
+	}
+}
+.loginButton{
+	background:#FFFFFF;
+	color: #B5146A;
+	font-weight: bold;
+	border-radius: 10px;
+	border:1px solid #B5146A;
+	padding: 11px 50px;
+}
+.class{
+	position: relative;
+	top: 60%;
+	left: 20%;
+	font-size: 20px;
+		a{
+		text-decoration-style: none;
+		font-size: 40px;
+			&:hover{
+			text-decoration: none;
+		}
+	}
+} 
+/* regidter.html*/
+.formReg{
+	display: inline-block;
+		input{
+		display: block;
+		padding: 11px 50px;
+	    border-radius: 10px;
+	    border:1px solid #EDD8E7;
+	    background:#FFFFFF;
+	    color: #F0B9A3;
+	    margin: 10px;
+	}
+}
+.btnReg{
+	background:#FFFFFF;
+	color: #B5146A;
+	font-weight: bold;
+	border-radius: 10px;
+	border:1px solid #B5146A;
+	padding: 11px 50px;
+}

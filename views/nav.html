@@ -1,0 +1,8 @@
+  <div class="navDiv">
+  <div class="branding"><a ng-href="#/">Home</a></div>
+  <ul class="navUl">
+    <li ng-hide="button()"><a ng-href="#/login"> Login </a></li>
+    <li ng-hide="button()"><a ng-href="#/register"> Register </a></li>
+    <li ng-show="button()"><a ng-href="#/login" ng-click="logout()">Logout</a></li>
+  </ul>
+</div>
