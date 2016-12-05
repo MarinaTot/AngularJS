@@ -12,6 +12,7 @@ myApp.service('authservice',['$rootScope','$http','$location', '$cookieStore' ,
 		  			$location.path('/login');
 		};//login
 		this.registration = function(user,users){
+			var oop;
 			var ind = true;
 			for(var i = 0; i < users; i++){
 				if(users[i].email == user.email){
